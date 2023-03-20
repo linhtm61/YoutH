@@ -1,0 +1,435 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #20a286;
+    background-color: #ebe5d9;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+/*----------------------------- HEADER -----------------------------*/
+header{
+    background-image: linear-gradient(to left bottom,rgba(32,162,134,0.5),rgba(255,255,255,0.55)),url(http://drive.google.com/uc?export=view&id=1Uh18Jd5iUYweO5HKTdqwzbYarJrW1jhY);
+    background-size:cover;
+    background-position: center;
+    height:100vh;
+    background-attachment: fixed;
+}
+
+.main-nav{
+    float: right;
+    font-size: 20px;
+    color:#ebe5d9;
+    list-style: none;
+    margin-right: 30px;
+    margin-top:20px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-right: 30px;
+}
+.main-nav li a{
+    text-decoration: none;
+    color: white;
+    font-size: 110%;
+    font-family: 'SVN-Yipes', 'sans serift';
+    font-weight: 700;
+    transition: border-bottom 1s;
+    padding: 3px 0;
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #ebe5d9;
+}
+
+.main-nav-1{
+  float: right;
+  font-size: 20px;
+  color:#393939;
+  list-style: none;
+  margin-right: 30px;
+  margin-top:20px;
+}
+
+.main-nav-1 li{
+  display: inline-block;
+  margin-right: 30px;
+}
+.main-nav-1 li a{
+  text-decoration: none;
+  color: #393939;
+  font-size: 110%;
+  font-family: 'SVN-Yipes', 'sans serift';
+  font-weight: 700;
+  transition: border-bottom 1s;
+  padding: 3px 0;
+}
+.main-nav-1 li a:hover,
+.main-nav-1 li a:active{
+  border-bottom: 2px solid #ebe5d9;
+}
+
+.clearfix::after{
+    content:"";
+    display:table;
+    clear: both;
+}
+.row{
+  max-width: 1920px;
+  max-height: 1080px;
+    margin: 0;
+    font-size: 60px;
+    color:#ffffff;
+   
+}
+.heading-main-text{
+
+  font-size: 80px;
+  position: relative;
+    color:#ffffff;
+ text-align: center;
+ margin-top: 250px;
+  animation: slideInUp;
+    animation-duration: 2s;
+}
+.heading-main-subtext{
+    font-family: 'Hertine';
+    color: #ffffff;
+    font-size: 32px;
+    position: absolute;
+    top:45%;
+    left: 33%;
+    animation: slideInUp;
+    animation-duration: 2s;
+}
+
+    
+/*---------------------------------- SECTION WHERE ------------------------------------*/
+.where-section{
+  height:100vh;
+}
+.where-section{
+  padding-top: 150px;
+}
+.section-title{
+    color:#393939;
+  text-align: center;
+}
+h2{
+    font-family: 'SVN-Yipes';
+    letter-spacing: 5px;
+    color: #20a286;
+    font-size: 250%;
+    font-weight: 100;
+    margin-top: 40px;
+    display: block;
+}
+.p-long{
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 20px;
+    width: 70%;
+    margin-top: 20px;
+    margin-left: 15%;
+    display: block;
+
+}
+
+/*--------------------CAROUSEL---------------------------------*/
+
+.where-section {
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ebe5d9;
+}
+
+input[type=radio] {
+  display: none;
+  position: relative;
+  margin-top: 30px;
+  margin-left: 300px;
+}
+
+.card {
+  position: absolute;
+  margin-left: 500px;
+  margin-top: 50px;
+  transition: transform .4s ease;
+  cursor: pointer;
+}
+
+.container {
+  width: 500px;
+  max-width: 500px;
+  max-height: 500px;
+  height: 500px;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto';
+}
+
+.cards {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin-bottom: 50px;
+  font-family: 'Roboto';
+
+}
+
+img {
+  display:block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+#item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
+  transform: translatex(-40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
+  transform: translatex(40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+  
+  img {
+    box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+  }
+}
+
+.player {
+  background-color: #fff;
+  border-radius: 8px;
+  min-width: 500px;
+  height: 100px;
+  padding: 16px 10px;
+  position: absolute;
+  margin-left: 915px;
+  margin-top: 650px;
+  font-family: 'Roboto';
+
+}
+
+.upper-part {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  height: 80px;
+  overflow: hidden;
+  font-family: 'Roboto';
+
+}
+
+.song-info {
+  width: calc(100% - 200px);
+  display: block;
+  font-family: 'Roboto';
+
+}
+
+.song-info .title {
+  color: #20a286;
+  font-size: 20px;
+  line-height: 45px;
+  font-family: 'Roboto';
+
+}
+
+.sub-line {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-family: 'Roboto';
+
+}
+
+.subtitle{
+  font-size: 15px;
+  line-height: 35px;
+  color: #393939;
+  font-family: 'Roboto';
+
+}
+
+
+
+
+.info-area {
+  width: 100%;
+  height: 300 px;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  transition: transform .4s ease-in;
+}
+
+#item-2:checked ~ .player #test {
+  transform: translateY(0);
+}
+
+#item-2:checked ~ .player #test  {
+  transform: translateY(-40px);
+}
+
+#item-3:checked ~ .player #test  {
+  transform: translateY(-80px);
+}
+
+/*-------------------- THE YOUTH SECTION ----------------------------------*/
+
+
+.the-youth-section{
+  height: 100vh;
+  margin-top: 120px;
+  background-image: linear-gradient(to left bottom,rgba(255,255,255,0.5),rgba(255,255,255,0.55)), url(http://drive.google.com/uc?export=view&id=1emxfat9Z0Tx_2tL5TBQ3hku1jtRrVeeA);
+  height: 100%;
+  width: 100%;
+}
+
+.the-youth-title, .the-youth-heading{
+  text-align: center;
+  color: #393939;
+}
+.clearfix::after{
+  content:"";
+  display:table;
+  clear: both;
+}
+
+/*-------------CAROUSEL-----------------*/
+
+
+
+/*-------------------- BLOOMS SECTION ----------------------------------*/
+.blooms-section{
+  height: 100vh;
+  margin-top: 20px;
+}
+.blooms-title{
+  padding-top: 20px;
+  text-align: center;
+}
+.p-long-1{
+  color:#393939;
+  text-align: center;
+  width: 70%;
+    margin-top: 20px;
+    margin-left: 15%;
+    display: block;
+
+}
+.video-player{
+  padding-top: 50px;
+  margin-left: 20%;
+}
+/*-------------------- #You+h SECTION ----------------------------------*/
+.clearfix::after{
+  content:"";
+  display:table;
+  clear: both;
+}
+
+
+.youth-section{
+  margin-top: 100px;
+  background-image: linear-gradient(to left bottom,rgba(255,255,255,0.3),rgba(255,255,255,0.35)), url(http://drive.google.com/uc?export=view&id=1sZN9j7sASz4hdyq-IohXBdojx_wRqx_h);
+  background-size:cover;
+  background-position: center;
+  height: 120vh;
+  background-attachment: fixed;
+}
+
+.youth-title{
+  padding-top: 20px;
+  text-align: center;
+}
+
+/*------------------- MESSAGE FORM ----------------------------*/
+
+form{
+  background-color: rgba(255,255,255,0.7);
+  margin-left: 20%;
+  width: 60%;
+  padding: 10px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+form .row{
+  margin-bottom: 10px;
+}
+label{
+  font-size: 25px;
+  color: #20a286;
+  font-family: 'SVN-Yipes', sans-serif;
+}
+
+input, textarea{
+  outline: none;
+  padding: 5 px;
+  background-color: rgba(32,162,134,0.5);
+  margin-left: 30px;
+  border: 1px solid rgba(32,162,134,0.7);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+textarea{
+  resize: none;
+  height: 80px;
+}
+
+input{
+  height: 40px;
+}
+
+form .row:last-child{
+  text-align: center;
+}
+
+input[type=submit]{
+  font-weight: 700;
+  font-size: 40%;
+  border-radius: 5px;
+  width: 30%;
+  font-family: 'SVN-Yipes', sans-serif serif;
+  color: white;
+
+}
+
+
+input[type=text], input[type=email], textarea{
+  width: 80%;
+  font-size: 30%;
+  padding-left: 10px;
+  padding-top: 3px;
+  transition: all, 3s;
+}
+
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus{
+color: #20a286;
+background-color: rgba(255,255,255,0.7);
+}
