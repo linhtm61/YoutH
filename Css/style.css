@@ -196,7 +196,7 @@ img {
   object-fit: cover;
 }
 
-#item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
+#item-1:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-1 {
   transform: translatex(-40%) scale(.8);
   opacity: .4;
   z-index: 0;
@@ -297,14 +297,15 @@ img {
   transform: translateY(-80px);
 }
 
-/*-------------------- THE YOUTH SECTION ----------------------------------*/
+/*----------------------------------------------------------- THE YOUTH SECTION ----------------------------------*/
 
 
 .the-youth-section{
   height: 100vh;
   margin-top: 120px;
+  padding-bottom: 120px;
   background-image: linear-gradient(to left bottom,rgba(255,255,255,0.5),rgba(255,255,255,0.55)), url(http://drive.google.com/uc?export=view&id=1emxfat9Z0Tx_2tL5TBQ3hku1jtRrVeeA);
-  height: 100%;
+  height: 120%;
   width: 100%;
 }
 
@@ -312,20 +313,175 @@ img {
   text-align: center;
   color: #393939;
 }
-.clearfix::after{
-  content:"";
-  display:table;
-  clear: both;
-}
+
 
 /*-------------CAROUSEL-----------------*/
 
+.the-youth-section {
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ebe5d9;
+}
+
+.vcarousel{
+align-items: center;
+justify-content: center;
+}
 
 
-/*-------------------- BLOOMS SECTION ----------------------------------*/
+input[type=radio] {
+  display: none;
+  position: relative;
+  margin-top: 30px;
+  margin-left: 300px;
+}
+
+.vcard {
+  position: absolute;
+  margin-left: 250px;
+  margin-top: 50px;
+  transition: transform .4s ease;
+  cursor: pointer;
+}
+
+.vcontainer {
+  width: 500px;
+  max-width: 500px;
+  max-height: 500px;
+  height: 500px;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto';
+}
+
+.vcards {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin-bottom: 50px;
+  font-family: 'Roboto';
+
+}
+
+.vimg {
+  display:block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  align-items: center;
+}
+
+#vitem-1:checked ~ .vcards #vsong-3, #vitem-3:checked ~ .vcards #vsong-2, #vitem-2:checked ~ .vcards #vsong-1 {
+  transform: translatex(-40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#vitem-1:checked ~ .vcards #vsong-2, #vitem-2:checked ~ .vcards #vsong-3, #vitem-3:checked ~ .vcards #vsong-1 {
+  transform: translatex(40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#vitem-1:checked ~ .vcards #vsong-1, #vitem-2:checked ~ .vcards #vsong-2, #vitem-3:checked ~ .vcards #vsong-3 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+  
+  .vimg {
+    box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+  }
+}
+
+.vplayer {
+  background-color: #fff;
+  border-radius: 8px;
+  min-width: 500px;
+  height: 100px;
+  padding: 16px 10px;
+  position: absolute;
+  margin-left: 915px;
+  margin-top: 650px;
+  font-family: 'Roboto';
+
+}
+
+.vupper-part {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  height: 80px;
+  overflow: hidden;
+  font-family: 'Roboto';
+
+}
+
+.vsong-info {
+  width: calc(100% - 200px);
+  display: block;
+  font-family: 'Roboto';
+
+}
+
+.vsong-info .vtitle {
+  color: #20a286;
+  font-size: 20px;
+  line-height: 45px;
+  font-family: 'Roboto';
+
+}
+
+.vsub-line {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-family: 'Roboto';
+
+}
+
+.vsubtitle{
+  font-size: 15px;
+  line-height: 35px;
+  color: #393939;
+  font-family: 'Roboto';
+
+}
+
+
+
+
+.vinfo-area {
+  width: 100%;
+  height: 300 px;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  transition: transform .4s ease-in;
+}
+
+#vitem-2:checked ~ .vplayer #vtest {
+  transform: translateY(0);
+}
+
+#vitem-2:checked ~ .vplayer #vtest  {
+  transform: translateY(-40px);
+}
+
+#vitem-3:checked ~ .vplayer #vtest  {
+  transform: translateY(-80px);
+}
+
+
+/*----------------------------------- BLOOMS SECTION ----------------------------------*/
 .blooms-section{
   height: 100vh;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 .blooms-title{
   padding-top: 20px;
