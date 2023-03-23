@@ -13,6 +13,10 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 /*----------------------------- HEADER -----------------------------*/
 header{
     background-image: linear-gradient(to left bottom,rgba(32,162,134,0.5),rgba(255,255,255,0.55)),url(http://drive.google.com/uc?export=view&id=1Uh18Jd5iUYweO5HKTdqwzbYarJrW1jhY);
@@ -73,6 +77,34 @@ header{
 }
 .main-nav-1 li a:hover,
 .main-nav-1 li a:active{
+  border-bottom: 2px solid #393939;
+}
+
+
+.main-nav-2{
+  float: right;
+  font-size: 20px;
+  color:#20a286;
+  list-style: none;
+  margin-right: 30px;
+  margin-top:20px;
+}
+
+.main-nav-2 li{
+  display: inline-block;
+  margin-right: 30px;
+}
+.main-nav-2 li a{
+  text-decoration: none;
+  color: #20a286;
+  font-size: 110%;
+  font-family: 'SVN-Yipes', 'sans serift';
+  font-weight: 700;
+  transition: border-bottom 1s;
+  padding: 3px 0;
+}
+.main-nav-2 li a:hover,
+.main-nav-2 li a:active{
   border-bottom: 2px solid #ebe5d9;
 }
 
@@ -157,6 +189,7 @@ input[type=radio] {
   margin-top: 30px;
   margin-left: 300px;
 }
+
 
 .card {
   position: absolute;
@@ -324,18 +357,15 @@ img {
   background-color: #ebe5d9;
 }
 
-.vcarousel{
-align-items: center;
-justify-content: center;
-}
 
 
-input[type=radio] {
+  input[type=radio] {
   display: none;
   position: relative;
   margin-top: 30px;
   margin-left: 300px;
 }
+
 
 .vcard {
   position: absolute;
@@ -588,4 +618,24 @@ input[type=text], input[type=email], textarea{
 input[type=text]:focus, input[type=email]:focus, textarea:focus{
 color: #20a286;
 background-color: rgba(255,255,255,0.7);
+}
+
+.btn{
+  font-family: 'SVN-Yipes', sans-serif;
+  font-size: 13px;
+  text-align: center;
+  color: #20a286;
+  padding-bottom: 5px;
+}
+
+#myname{
+  font-family: 'Nunito', sans-serif;
+}
+
+#email{
+  font-family: 'Nunito', sans-serif;
+}
+
+#note{
+  font-family: 'Nunito', sans-serif;
 }

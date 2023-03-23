@@ -1,0 +1,556 @@
+/* Big tablet to 1200px */
+@media only screen and (max-width:1200px){
+    .p-long{
+        font-size: 16px;
+    }
+    .card{
+        position: absolute;
+        margin-left: 350px;
+        margin-top: 50px;
+        transition: transform .4s ease;
+        cursor: pointer;
+      }
+      .player{
+        margin-left: 595px;
+        background-color: #fff;
+        border-radius: 8px;
+        min-width: 400px;
+        height: 100px;
+        padding: 16px 10px;
+        margin-top: 570px;
+        font-family: 'Roboto';
+        font-size: 15px;
+      }
+
+      .vcard {
+        position: absolute;
+        margin-left: 105px;
+        margin-top: 50px;
+        transition: transform .4s ease;
+        cursor: pointer;
+      }
+
+      .vplayer {
+        background-color: #fff;
+        border-radius: 8px;
+        min-width: 400px;
+        height: 100px;
+        padding: 16px 10px;
+        position: absolute;
+        margin-left: 595px;
+        margin-top: 575px;
+        font-family: 'Roboto';
+      }
+
+      .vsong-info .vtitle {
+        color: #20a286;
+        font-size: 20px;
+        line-height: 45px;
+        font-family: 'Roboto';
+        text-align: left;
+      }
+
+      .vupper-part {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        height: 80px;
+        overflow: hidden;
+        font-family: 'Roboto';
+        font-size: 10px;
+      }
+      .vsong-info {
+        width: calc(100% - 15px);
+        display: block;
+        font-family: 'Roboto';
+      }
+    .video-player{
+        margin-left: 130px;
+        align-items: center;
+    }
+      }
+
+
+/*small tablet to big tablet from 768 to 1023px*/
+@media only screen and (max-width:1023px){
+
+body{
+    height: 1920px;
+}
+.heading-main-subtext{
+    left: 20%;
+}
+
+.p-long{
+    font-size: 16px;
+}
+.card{
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 50px;
+    transition: transform .4s ease;
+    cursor: pointer;
+  }
+  .player{
+    margin-left: 395px;
+    background-color: #fff;
+    border-radius: 8px;
+    min-width: 400px;
+    height: 100px;
+    padding: 16px 10px;
+    margin-top: 570px;
+    font-family: 'Roboto';
+    font-size: 15px;
+  }
+
+  .vcard {
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 50px;
+    transition: transform .4s ease;
+    cursor: pointer;
+  }
+
+  .vplayer {
+    background-color: #fff;
+    border-radius: 8px;
+    min-width: 400px;
+    height: 100px;
+    padding: 16px 10px;
+    position: absolute;
+    margin-left: 455px;
+    margin-top: 575px;
+    font-family: 'Roboto';
+  }
+
+  .vsong-info .vtitle {
+    color: #20a286;
+    font-size: 20px;
+    line-height: 45px;
+    font-family: 'Roboto';
+    text-align: left;
+  }
+
+  .vupper-part {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    height: 80px;
+    overflow: hidden;
+    font-family: 'Roboto';
+    font-size: 10px;
+  }
+  .vsong-info {
+    width: calc(100% - 15px);
+    display: block;
+    font-family: 'Roboto';
+  }
+.video-player{
+    margin-left: 130px;
+    align-items: center;
+}
+h2{
+    font-size: 45px;
+}
+
+p{
+    font-size: 16px;
+}
+}
+
+/*small phone to small talets */
+@media only screen and (max-width: 767px){
+   
+    .heading-main-subtext{
+        font-size: 25px;
+        left: 16%;
+        top: 50%;
+    }
+
+    .main-nav, .main-nav-1, .main-nav-2{
+        font-size: 15px;
+    }
+    h2{
+        font-size: 35px;
+    }
+    p{
+        font-size: 13px;
+    }
+
+    .p-long{
+        font-size: 13px;
+    }
+    
+.card{
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 50px;
+    transition: transform .4s ease;
+    cursor: pointer;
+  }
+  .player{
+    margin-left: 195px;
+    background-color: #fff;
+    border-radius: 8px;
+    min-width: 400px;
+    height: 100px;
+    padding: 16px 10px;
+    margin-top: 570px;
+    font-family: 'Roboto';
+    font-size: 15px;
+  }
+
+  .vcard {
+    position: absolute;
+    margin-left: -70px;
+    margin-top: 50px;
+    transition: transform .4s ease;
+    cursor: pointer;
+  }
+
+  .vplayer {
+    background-color: #fff;
+    border-radius: 8px;
+    min-width: 400px;
+    height: 100px;
+    padding: 16px 10px;
+    position: absolute;
+    margin-left: 255px;
+    margin-top: 575px;
+    font-family: 'Roboto';
+  }
+
+  .vsong-info .vtitle {
+    color: #20a286;
+    font-size: 20px;
+    line-height: 45px;
+    font-family: 'Roboto';
+    text-align: left;
+  }
+
+  .vupper-part {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    height: 80px;
+    overflow: hidden;
+    font-family: 'Roboto';
+    font-size: 10px;
+  }
+  .vsong-info {
+    width: calc(100% - 15px);
+    display: block;
+    font-family: 'Roboto';
+  }
+.video-player{
+    margin-left: -40px;
+    align-items: center;
+    transform: scale(0.7,0.7);
+}
+}
+
+/*small phone from 0 to 480px*/
+@media only screen and (max-width:480px){
+    header{
+        background-image: linear-gradient(to left bottom,rgba(32,162,134,0.5),rgba(255,255,255,0.55)),url(http://drive.google.com/uc?export=view&id=1Uh18Jd5iUYweO5HKTdqwzbYarJrW1jhY);
+        background-size: cover;
+        background-position: center;
+        height: 1300px;
+        width: 600px;
+        background-attachment: fixed;
+    }
+    .heading-main-subtext{
+        font-size: 30px;
+        }
+
+    .heading-main-text{
+
+        font-size: 160px;
+        position: relative;
+          color:#ffffff;
+       text-align: center;
+       margin-top: 450px;
+       margin-left: 25px;
+        animation: slideInUp;
+          animation-duration: 2s;
+      }
+      .heading-main-subtext{
+          font-family: 'Hertine';
+          color: #ffffff;
+          font-size: 30px;
+          position: absolute;
+          margin-top: 70%;
+          margin-left: 40%;
+          animation: slideInUp;
+          animation-duration: 2s;
+      }
+    
+    .p-long{
+        font-size: 13px;
+    }
+    .card{
+        position: absolute;
+        margin-left: 250px;
+        margin-top: 50px;
+        transition: transform .4s ease;
+        cursor: pointer;
+      }
+      .player{
+        margin-left: 395px;
+        background-color: #fff;
+        border-radius: 8px;
+        min-width: 400px;
+        height: 100px;
+        padding: 16px 10px;
+        margin-top: 570px;
+        font-family: 'Roboto';
+        font-size: 15px;
+      }
+    
+      .vcard {
+        position: absolute;
+        margin-left: 30px;
+        margin-top: 50px;
+        transition: transform .4s ease;
+        cursor: pointer;
+      }
+    
+      .vplayer {
+        background-color: #fff;
+        border-radius: 8px;
+        min-width: 400px;
+        height: 100px;
+        padding: 16px 10px;
+        position: absolute;
+        margin-left: 455px;
+        margin-top: 575px;
+        font-family: 'Roboto';
+      }
+    
+      .vsong-info .vtitle {
+        color: #20a286;
+        font-size: 20px;
+        line-height: 45px;
+        font-family: 'Roboto';
+        text-align: left;
+      }
+    
+      .vupper-part {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        height: 80px;
+        overflow: hidden;
+        font-family: 'Roboto';
+        font-size: 10px;
+      }
+      .vsong-info {
+        width: calc(100% - 15px);
+        display: block;
+        font-family: 'Roboto';
+      }
+    .video-player{
+        margin-left: 130px;
+        align-items: center;
+    }
+    h2{
+        font-size: 45px;
+    }
+    
+    p{
+        font-size: 13px;
+    }
+    }
+    
+    /*small phone to small talets */
+    @media only screen and (max-width: 767px){
+       
+        .heading-main-subtext{
+            left: 16%;
+            top: 50%;
+        }
+    
+        .main-nav, .main-nav-1, .main-nav-2{
+            font-size: 18px;
+            float: right;
+            color:#ebe5d9;
+            list-style: none;
+            margin-right: 70px;
+            margin-top:30px;
+        }
+        h2{
+            font-size: 35px;
+            margint-top: 125px;
+        }
+        p{
+            font-size: 11px;
+            margin-top: 20px;
+        }
+    .where-section, .the-youth-section, .blooms-section, .youth-section{
+        height: 1300px;
+        width: 600px;
+    }
+
+    .the-youth-section{
+        margin-top: 0px;
+    }
+    img{
+        transform: scale(0.8,0.8);
+    }
+    .card{
+        
+        position: absolute;
+        margin-left: 70px;
+        margin-top: 50px;
+        transition: transform .4s ease;
+        cursor: pointer;
+        margin-right: 0px;
+        padding-right: 0px;
+      }
+      .player{
+        margin-top: 350px;
+        margin-left: 55px;
+        background-color: #fff;
+        border-radius: 8px;
+        min-width: 350px;
+        height: 100px;
+        padding: 16px 10px;
+        margin-top: 570px;
+        font-family: 'Roboto';
+        font-size: 15px;
+      }
+    
+      .vcard {
+        position: absolute;
+        margin-left: -165px;
+        margin-top: 50px;
+        transition: transform .4s ease;
+        cursor: pointer;
+      }
+    
+      .vplayer {
+        background-color: #fff;
+        border-radius: 8px;
+        min-width: 350px;
+        height: 100px;
+        padding: 16px 10px;
+        position: absolute;
+        margin-left: 40px;
+        margin-top: 575px;
+        font-family: 'Roboto';
+      }
+    
+      .vsong-info .vtitle {
+        color: #20a286;
+        font-size: 20px;
+        line-height: 45px;
+        font-family: 'Roboto';
+        text-align: left;
+      }
+    
+      .vupper-part {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        height: 80px;
+        overflow: hidden;
+        font-family: 'Roboto';
+        font-size: 10px;
+      }
+      .vsong-info {
+        width: calc(100% - 15px);
+        display: block;
+        font-family: 'Roboto';
+      }
+    .video-player{
+        margin-left: -90px;
+        align-items: center;
+        transform: scale(0.6,0.6);
+        padding-top: 15px;
+    }
+
+    .the-youth-section{
+        padding-bottom: 70px;
+    }
+    
+form{
+    background-color: rgba(255,255,255,0.7);
+    margin-left: 20%;
+    width: 60%;
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  
+  form .row{
+    margin-bottom: 0px;
+  }
+  
+label{
+    font-size: 25px;
+    color: #20a286;
+    font-family: 'SVN-Yipes', sans-serif;
+  }
+  
+  input, textarea{
+    outline: none;
+    padding: 5 px;
+    background-color: rgba(32,162,134,0.5);
+    margin-left: 30px;
+    border: 1px solid rgba(32,162,134,0.7);
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  textarea{
+    resize: none;
+    height: 80px;
+  }
+  
+  input{
+    height: 40px;
+  }
+  
+  form .row:last-child{
+    text-align: center;
+  }
+  
+  input[type=submit]{
+    font-weight: 700;
+    font-size: 40%;
+    border-radius: 5px;
+    width: 30%;
+    font-family: 'SVN-Yipes', sans-serif serif;
+    color: white;
+  
+  }
+  
+  
+  input[type=text], input[type=email], textarea{
+    width: 80%;
+    font-size: 30%;
+    padding-left: 10px;
+    padding-top: 3px;
+    transition: all, 3s;
+  }
+  
+  
+  input[type=text]:focus, input[type=email]:focus, textarea:focus{
+  color: #20a286;
+  background-color: rgba(255,255,255,0.7);
+  }
+  
+  .btn{
+    font-family: 'SVN-Yipes', sans-serif;
+    font-size: 13px;
+    text-align: center;
+    color: #20a286;
+    padding-bottom: 5px;
+  }
+  
+}
