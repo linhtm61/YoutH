@@ -5,7 +5,7 @@
 }
 
 html{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 20px;
     color: #20a286;
     background-color: #ebe5d9;
@@ -15,6 +15,10 @@ html{
 
 body{
   overflow-x: hidden;
+}
+
+p{
+  font-family: 'Nunito', sans-serif;
 }
 
 /*----------------------------- HEADER -----------------------------*/
@@ -164,7 +168,7 @@ h2{
     display: block;
 }
 .p-long{
-    font-family: 'Roboto', 'sans-serif';
+    font-family: 'Nunito', 'sans-serif';
     font-size: 20px;
     width: 70%;
     margin-top: 20px;
@@ -179,7 +183,7 @@ h2{
   align-items: center;
   justify-content: center;
   padding: 30px 10px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nunito', sans-serif;
   background-color: #ebe5d9;
 }
 
@@ -209,7 +213,7 @@ input[type=radio] {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  font-family: 'Roboto';
+  font-family: 'Nunito';
 }
 
 .cards {
@@ -217,7 +221,7 @@ input[type=radio] {
   width: 500px;
   height: 500px;
   margin-bottom: 50px;
-  font-family: 'Roboto';
+  font-family: 'Nunito';
 
 }
 
@@ -229,22 +233,34 @@ img {
   object-fit: cover;
 }
 
-#item-1:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-1 {
+#item-1:checked ~ .cards #song-7, #item-7:checked ~ .cards #song-6, #item-6:checked ~ .cards #song-5, #item-5:checked ~ .cards #song-4, #item-4:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-1{
   transform: translatex(-40%) scale(.8);
-  opacity: .4;
-  z-index: 0;
+  opacity: .6;
+  z-index: 2;
 }
 
-#item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
+#item-1:checked ~ .cards #song-6, #item-7:checked ~ .cards #song-5,  #item-6:checked ~ .cards #song-4, #item-5:checked ~ .cards #song-3 , #item-4:checked ~ .cards #song-2 , #item-3:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-7{
+  transform: translatex(-60%) scale(.7) translateY(-50px);
+  opacity: .5;
+  z-index: 1;
+}
+
+
+#item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-4, #item-4:checked ~ .cards #song-5, #item-5:checked ~ .cards #song-6, #item-6:checked ~ .cards #song-7, #item-7:checked ~ .cards #song-1{
   transform: translatex(40%) scale(.8);
-  opacity: .4;
-  z-index: 0;
+  opacity: .6;
+  z-index: 2;
+}
+#item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-4, #item-3:checked ~ .cards #song-5, #item-4:checked ~ .cards #song-6, #item-5:checked ~ .cards #song-7, #item-6:checked ~ .cards #song-1,#item-7:checked ~ .cards #song-2{
+  transform: translatex(60%) scale(.7)  translateY(-50px);
+  opacity: .5;
+  z-index: 1;
 }
 
-#item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {
+#item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3,#item-4:checked ~ .cards #song-4, #item-5:checked ~ .cards #song-5, #item-6:checked ~ .cards #song-6, #item-7:checked ~ .cards #song-7{
   transform: translatex(0) scale(1);
   opacity: 1;
-  z-index: 1;
+  z-index: 3;
   
   img {
     box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
@@ -255,12 +271,12 @@ img {
   background-color: #fff;
   border-radius: 8px;
   min-width: 500px;
-  height: 100px;
+  height: 150px;
   padding: 16px 10px;
   position: absolute;
   margin-left: 915px;
-  margin-top: 650px;
-  font-family: 'Roboto';
+  margin-top: 595px;
+  font-family: 'Nunito';
 
 }
 
@@ -269,52 +285,59 @@ img {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  height: 80px;
+  height: 130px;
   overflow: hidden;
-  font-family: 'Roboto';
+  font-family: 'Nunito';
 
 }
 
 .song-info {
   width: calc(100% - 200px);
   display: block;
-  font-family: 'Roboto';
+  font-family: 'Nunito';
 
 }
 
 .song-info .title {
   color: #20a286;
   font-size: 20px;
-  line-height: 45px;
-  font-family: 'Roboto';
+  line-height: 50px;
+  font-family: 'Nunito';
 
+}
+
+#song-info-2{
+  padding-top: 120px;
+}
+
+#song-info-3{
+  padding-top: 150px;
 }
 
 .sub-line {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  font-family: 'Roboto';
-
+  width: 150%;
+  font-family: 'Nunito';
+  height: 100%;
 }
 
 .subtitle{
-  font-size: 15px;
-  line-height: 35px;
+  font-size: 13px;
+  line-height: 25px;
   color: #393939;
-  font-family: 'Roboto';
-
+  font-family: 'Nunito';
 }
 
 
 
 
 .info-area {
-  width: 100%;
-  height: 300 px;
+  width: 105%;
+  height: 20000px;
   position: absolute;
   top: 0;
-  left: 30px;
+  left: 20px;
   transition: transform .4s ease-in;
 }
 
@@ -323,12 +346,30 @@ img {
 }
 
 #item-2:checked ~ .player #test  {
-  transform: translateY(-40px);
+  transform: translateY(-100px);
 }
 
 #item-3:checked ~ .player #test  {
-  transform: translateY(-80px);
+  transform: translateY(-295px);
 }
+
+#item-4:checked ~ .player #test  {
+  transform: translateY(-295px);
+}
+
+#item-5:checked ~ .player #test  {
+  transform: translateY(-520px);
+}
+
+#item-6:checked ~ .player #test  {
+  transform: translateY(-600px);
+}
+
+#item-7:checked ~ .player #test  {
+  transform: translateY(-675px);
+}
+
+
 
 /*----------------------------------------------------------- THE YOUTH SECTION ----------------------------------*/
 
@@ -336,10 +377,10 @@ img {
 .the-youth-section{
   height: 100vh;
   margin-top: 120px;
-  padding-bottom: 120px;
   background-image: linear-gradient(to left bottom,rgba(255,255,255,0.5),rgba(255,255,255,0.55)), url(http://drive.google.com/uc?export=view&id=1emxfat9Z0Tx_2tL5TBQ3hku1jtRrVeeA);
   height: 120%;
   width: 100%;
+  margin-bottom: -150px;
 }
 
 .the-youth-title, .the-youth-heading{
@@ -347,171 +388,56 @@ img {
   color: #393939;
 }
 
-
-/*-------------CAROUSEL-----------------*/
-
-.the-youth-section {
-  align-items: center;
-  justify-content: center;
-  font-family: 'Roboto', sans-serif;
-  background-color: #ebe5d9;
-}
-
-
-
-  input[type=radio] {
-  display: none;
-  position: relative;
-  margin-top: 30px;
-  margin-left: 300px;
-}
-
-
-.vcard {
-  position: absolute;
-  margin-left: 250px;
-  margin-top: 50px;
-  transition: transform .4s ease;
-  cursor: pointer;
-}
-
-.vcontainer {
-  width: 500px;
-  max-width: 500px;
-  max-height: 500px;
-  height: 500px;
-  transform-style: preserve-3d;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  font-family: 'Roboto';
-}
-
-.vcards {
-  position: relative;
-  width: 500px;
-  height: 500px;
-  margin-bottom: 50px;
-  font-family: 'Roboto';
-
-}
-
-.vimg {
-  display:block;
+.the-youth-section-1{
+  height: 120vh;
+  padding-bottom: 120px;
+  background-image: linear-gradient(to left bottom,rgba(255,255,255,0.5),rgba(255,255,255,0.55)), url(http://drive.google.com/uc?export=view&id=1emxfat9Z0Tx_2tL5TBQ3hku1jtRrVeeA);
+  height: 180%;
   width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  object-fit: cover;
   align-items: center;
-}
-
-#vitem-1:checked ~ .vcards #vsong-3, #vitem-3:checked ~ .vcards #vsong-2, #vitem-2:checked ~ .vcards #vsong-1 {
-  transform: translatex(-40%) scale(.8);
-  opacity: .4;
-  z-index: 0;
-}
-
-#vitem-1:checked ~ .vcards #vsong-2, #vitem-2:checked ~ .vcards #vsong-3, #vitem-3:checked ~ .vcards #vsong-1 {
-  transform: translatex(40%) scale(.8);
-  opacity: .4;
-  z-index: 0;
-}
-
-#vitem-1:checked ~ .vcards #vsong-1, #vitem-2:checked ~ .vcards #vsong-2, #vitem-3:checked ~ .vcards #vsong-3 {
-  transform: translatex(0) scale(1);
-  opacity: 1;
-  z-index: 1;
-  
-  .vimg {
-    box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
-  }
-}
-
-.vplayer {
-  background-color: #fff;
-  border-radius: 8px;
-  min-width: 500px;
-  height: 100px;
-  padding: 16px 10px;
-  position: absolute;
-  margin-left: 915px;
-  margin-top: 650px;
-  font-family: 'Roboto';
 
 }
 
-.vupper-part {
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  height: 80px;
-  overflow: hidden;
-  font-family: 'Roboto';
 
-}
+/*-------------GALLERY-----------------*/
 
-.vsong-info {
-  width: calc(100% - 200px);
-  display: block;
-  font-family: 'Roboto';
-
-}
-
-.vsong-info .vtitle {
-  color: #20a286;
-  font-size: 20px;
-  line-height: 45px;
-  font-family: 'Roboto';
-
-}
-
-.vsub-line {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  font-family: 'Roboto';
-
-}
-
-.vsubtitle{
-  font-size: 15px;
-  line-height: 35px;
+.memo-1{
   color: #393939;
-  font-family: 'Roboto';
+  font-family: 'Nunito', sans-serif;
+  box-sizing: border-box;
+  max-width: 350px;
+  display: inline-block;
+  padding: 20px;
+  padding-top: 50px;
+  text-align: center;
+}
 
+#smemo{
+  margin-left: 80px;
+}
+
+#ssmemo{
+  margin-left: 80px;
+  margin-top: 80px;
+}
+.memo-2{
+  color: #393939;
+  font-family: 'Nunito', sans-serif;
+  box-sizing: border-box;
+  max-width: 350px;
+  display: inline-block;
+  padding: 20px;
+  padding-top: 50px;
+  text-align: center;
 }
 
 
-
-
-.vinfo-area {
-  width: 100%;
-  height: 300 px;
-  position: absolute;
-  top: 0;
-  left: 30px;
-  transition: transform .4s ease-in;
-}
-
-#vitem-2:checked ~ .vplayer #vtest {
-  transform: translateY(0);
-}
-
-#vitem-2:checked ~ .vplayer #vtest  {
-  transform: translateY(-40px);
-}
-
-#vitem-3:checked ~ .vplayer #vtest  {
-  transform: translateY(-80px);
-}
 
 
 /*----------------------------------- BLOOMS SECTION ----------------------------------*/
 .blooms-section{
   height: 100vh;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 .blooms-title{
   padding-top: 20px;
@@ -543,7 +469,7 @@ img {
   background-image: linear-gradient(to left bottom,rgba(255,255,255,0.3),rgba(255,255,255,0.35)), url(http://drive.google.com/uc?export=view&id=1sZN9j7sASz4hdyq-IohXBdojx_wRqx_h);
   background-size:cover;
   background-position: center;
-  height: 120vh;
+  height: 140vh;
   background-attachment: fixed;
 }
 
