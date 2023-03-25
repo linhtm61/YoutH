@@ -134,13 +134,14 @@ header{
  margin-top: 250px;
   animation: slideInUp;
     animation-duration: 2s;
+    font-family: 'SVN-Yipes', sans-serif;
 }
 .heading-main-subtext{
-    font-family: 'Hertine';
+    font-family: 'Hertine', sans-serif;
     color: #ffffff;
     font-size: 32px;
     position: absolute;
-    top:45%;
+    top:48%;
     left: 33%;
     animation: slideInUp;
     animation-duration: 2s;
@@ -270,7 +271,7 @@ img {
 .player {
   background-color: #fff;
   border-radius: 8px;
-  min-width: 500px;
+  min-width: 680px;
   height: 150px;
   padding: 16px 10px;
   position: absolute;
@@ -333,7 +334,7 @@ img {
 
 
 .info-area {
-  width: 105%;
+  width: 95%;
   height: 20000px;
   position: absolute;
   top: 0;
@@ -350,7 +351,7 @@ img {
 }
 
 #item-3:checked ~ .player #test  {
-  transform: translateY(-295px);
+  transform: translateY(-245px);
 }
 
 #item-4:checked ~ .player #test  {
@@ -358,15 +359,15 @@ img {
 }
 
 #item-5:checked ~ .player #test  {
-  transform: translateY(-520px);
+  transform: translateY(-470px);
 }
 
 #item-6:checked ~ .player #test  {
-  transform: translateY(-600px);
+  transform: translateY(-515px);
 }
 
 #item-7:checked ~ .player #test  {
-  transform: translateY(-675px);
+  transform: translateY(-590px);
 }
 
 
@@ -460,10 +461,10 @@ img {
 
 .youth-section{
   margin-top: 100px;
-  background-image: linear-gradient(to left bottom,rgba(255,255,255,0.3),rgba(255,255,255,0.35)), url(http://drive.google.com/uc?export=view&id=1sZN9j7sASz4hdyq-IohXBdojx_wRqx_h);
+  background-image: linear-gradient(to left bottom,rgba(255,255,255,0.6),rgba(255,255,255,0.65)), url(http://drive.google.com/uc?export=view&id=1sZN9j7sASz4hdyq-IohXBdojx_wRqx_h);
   background-size:cover;
   background-position: center;
-  height: 140vh;
+  height: 150vh;
   background-attachment: fixed;
 }
 
@@ -522,7 +523,7 @@ input[type=submit]{
   width: 30%;
   font-family: 'SVN-Yipes', sans-serif serif;
   color: white;
-
+  text-decoration: solid;
 }
 
 
@@ -558,4 +559,9 @@ background-color: rgba(255,255,255,0.7);
 
 #note{
   font-family: 'Nunito', sans-serif;
+}
+
+.snote{
+  font-family: 'Nunito', sans-serif;
+  color: #20a286;
 }

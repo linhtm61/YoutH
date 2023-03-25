@@ -54,6 +54,104 @@
         margin-left: 130px;
         align-items: center;
     }
+    .info-area {
+      width: 120%;
+      height: 20000px;
+      position: absolute;
+      top: 0;
+      left: 20px;
+      transition: transform .4s ease-in;
+    }
+    
+    .player {
+      background-color: #fff;
+      border-radius: 8px;
+      min-width: 680px;
+      height: 150px;
+      padding: 16px 10px;
+      position: absolute;
+      margin-left: 915px;
+      margin-top: 595px;
+      font-family: 'Nunito';
+    
+    }
+    
+    .upper-part {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      height: 130px;
+      overflow: hidden;
+      font-family: 'Nunito';
+    
+    }
+    
+    .song-info {
+      width: calc(100% - 200px);
+      display: block;
+      font-family: 'Nunito';
+    
+    }
+    
+    .song-info .title {
+      color: #20a286;
+      font-size: 20px;
+      line-height: 30px;
+      font-family: 'Nunito';
+    
+    }
+    
+    #song-info-2{
+      padding-top: 120px;
+    }
+    
+    #song-info-3{
+      padding-top: 150px;
+    }
+    
+    .sub-line {
+      display: flex;
+      justify-content: space-between;
+      width: 150%;
+      font-family: 'Nunito';
+      height: 100%;
+    }
+    
+    .subtitle{
+      font-size: 13px;
+      line-height: 25px;
+      color: #393939;
+      font-family: 'Nunito';
+    }
+    
+#item-2:checked ~ .player #test {
+  transform: translateY(0);
+}
+
+#item-2:checked ~ .player #test  {
+  transform: translateY(-100px);
+}
+
+#item-3:checked ~ .player #test  {
+  transform: translateY(-225px);
+}
+
+#item-4:checked ~ .player #test  {
+  transform: translateY(-295px);
+}
+
+#item-5:checked ~ .player #test  {
+  transform: translateY(-430px);
+}
+
+#item-6:checked ~ .player #test  {
+  transform: translateY(-475px);
+}
+
+#item-7:checked ~ .player #test  {
+  transform: translateY(-475px);
+}
 
 
       }
@@ -79,6 +177,9 @@ body{
     transition: transform .4s ease;
     cursor: pointer;
   }
+
+
+  
   .player{
     margin-left: 395px;
     background-color: #fff;
