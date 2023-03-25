@@ -11,8 +11,12 @@ html{
     background-color: #ebe5d9;
     text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
+   
 }
 
+@font-face {
+  font-family: "SVN-Yipes";
+       url("Css/fonts/SVN-Yipes.otf") format("opentype"),
 body{
   overflow-x: hidden;
 }
