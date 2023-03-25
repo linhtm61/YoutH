@@ -375,12 +375,12 @@ img {
 
 
 .the-youth-section{
-  height: 100vh;
+  height: 240vh;
   margin-top: 120px;
   background-image: linear-gradient(to left bottom,rgba(255,255,255,0.5),rgba(255,255,255,0.55)), url(http://drive.google.com/uc?export=view&id=1emxfat9Z0Tx_2tL5TBQ3hku1jtRrVeeA);
-  height: 120%;
   width: 100%;
   margin-bottom: -150px;
+  height: 285%;
 }
 
 .the-youth-title, .the-youth-heading{
@@ -388,15 +388,7 @@ img {
   color: #393939;
 }
 
-.the-youth-section-1{
-  height: 120vh;
-  padding-bottom: 120px;
-  background-image: linear-gradient(to left bottom,rgba(255,255,255,0.5),rgba(255,255,255,0.55)), url(http://drive.google.com/uc?export=view&id=1emxfat9Z0Tx_2tL5TBQ3hku1jtRrVeeA);
-  height: 180%;
-  width: 100%;
-  align-items: center;
 
-}
 
 
 /*-------------GALLERY-----------------*/
@@ -437,7 +429,7 @@ img {
 /*----------------------------------- BLOOMS SECTION ----------------------------------*/
 .blooms-section{
   height: 100vh;
-  margin-top: 80px;
+  margin-top: 150px;
 }
 .blooms-title{
   padding-top: 20px;
@@ -455,6 +447,8 @@ img {
 .video-player{
   padding-top: 50px;
   margin-left: 20%;
+  display: block;
+  align-items: center;
 }
 /*-------------------- #You+h SECTION ----------------------------------*/
 .clearfix::after{
