@@ -14,6 +14,9 @@ html{
    
 }
 
+@font-face {
+  font-family: "SVN-Yipes";
+}
 
 body{
   overflow-x: hidden;
