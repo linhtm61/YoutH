@@ -16,6 +16,8 @@ html{
 
 @font-face {
   font-family: "SVN-Yipes";
+           url("main/SVN-Yipes.otf") format("opentype"),
+
 }
 
 body{
