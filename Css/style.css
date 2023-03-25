@@ -11,25 +11,8 @@ html{
     background-color: #ebe5d9;
     text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
-   
 }
 
-@font-face {
-    font-family: 'svn-yipesregular';
-    src: url('svn-yipes-webfont.woff2') format('woff2'),
-         url('svn-yipes-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    
-@font-face {
-    font-family: 'hertineregular';
-    src: url('hertine-webfont.woff2') format('woff2'),
-         url('hertine-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-}
 body{
   overflow-x: hidden;
 }
@@ -154,7 +137,7 @@ header{
     font-family: 'SVN-Yipes', sans-serif;
 }
 .heading-main-subtext{
-    font-family: 'hertineregular', sans-serif;
+    font-family: 'Hertine', sans-serif;
     color: #ffffff;
     font-size: 32px;
     position: absolute;
