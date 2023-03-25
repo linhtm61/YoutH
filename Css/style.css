@@ -16,7 +16,7 @@ html{
 
 @font-face {
   font-family: "SVN-Yipes";
-       url("Css/fonts/SVN-Yipes.otf") format("opentype"),
+       url("Css/SVN-Yipes.otf") format("opentype"),
 body{
   overflow-x: hidden;
 }
