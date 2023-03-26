@@ -12,7 +12,14 @@ html{
     text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
 }
-
+@font-face {
+  font-family: SVN-Yipes;
+  src: url(SVN-Yipes.otf);
+}
+@font-face {
+  font-family: Hertine;
+  src: url(Hertine.otf);
+}
 body{
   overflow-x: hidden;
 }
@@ -135,6 +142,7 @@ header{
   animation: slideInUp;
     animation-duration: 2s;
     font-family: 'SVN-Yipes', sans-serif;
+    display: block;
 }
 .heading-main-subtext{
     font-family: 'Hertine', sans-serif;
@@ -145,6 +153,7 @@ header{
     left: 33%;
     animation: slideInUp;
     animation-duration: 2s;
+    display: block;
 }
 
     

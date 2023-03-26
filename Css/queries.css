@@ -1,11 +1,23 @@
 /* Big tablet to 1200px */
-@media only screen and (min-width:1200px){
-  .heading-main-subtex{
-  margin-top: 35px;
-  }
+@media only screen and (min-width:1296px){
+  .heading-main-subtext{
+    font-family: 'Hertine', sans-serif;
+    color: #ffffff;
+    font-size: 32px;
+    position: absolute;
+    top:52%;
+    left: 33%;
+    animation: slideInUp;
+    animation-duration: 2s;
+    display: block;
+}
+.blooms-section{
+  height: 100vh;
+  margin-top: 250px;
+}
 }
 /* Big tablet to 1200px */
-@media only screen and (max-width:1200px){
+@media only screen and (max-width:1296px){
     .p-long{
         font-size: 16px;
     }
