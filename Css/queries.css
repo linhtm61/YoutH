@@ -1,4 +1,17 @@
 /* Big tablet to 1200px */
+@media only screen and (width: 1920px) and (height: 1020px){
+  .heading-main-subtext{
+    font-family: 'Hertine', sans-serif;
+    color: #ffffff;
+    font-size: 32px;
+    position: absolute;
+    top: 60%;
+    left: 33%;
+    animation: slideInUp;
+    animation-duration: 2s;
+    display: block;
+  }
+}
 @media only screen and (min-width:1296px){
 
 
