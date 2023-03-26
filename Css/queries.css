@@ -12,7 +12,7 @@
     display: block;
   }
 }
-@media only screen and (min-width:1296px){
+@media only screen and (min-width:1200px){
 
 
 .heading-main-text{
@@ -40,11 +40,11 @@
 }
 .blooms-section{
   height: 100vh;
-  margin-top: 250px;
+  margin-top: 150px;
 }
 }
 /* Big tablet to 1200px */
-@media only screen and (max-width:1296px){
+@media only screen and (max-width:1200px){
     .p-long{
         font-size: 16px;
     }
@@ -54,17 +54,6 @@
         margin-top: 50px;
         transition: transform .4s ease;
         cursor: pointer;
-      }
-      .player{
-        margin-left: 595px;
-        background-color: #fff;
-        border-radius: 8px;
-        min-width: 400px;
-        height: 100px;
-        padding: 16px 10px;
-        margin-top: 570px;
-        font-family: 'Roboto';
-        font-size: 15px;
       }
 
         .memo-1{
@@ -94,7 +83,7 @@
         align-items: center;
     }
     .info-area {
-      width: 120%;
+      width: 95%;
       height: 20000px;
       position: absolute;
       top: 0;
@@ -109,7 +98,7 @@
       height: 150px;
       padding: 16px 10px;
       position: absolute;
-      margin-left: 915px;
+      margin-left: 515px;
       margin-top: 595px;
       font-family: 'Nunito';
     
@@ -165,33 +154,36 @@
     }
     
 #item-2:checked ~ .player #test {
-  transform: translateY(0);
+  transform: translateY(0px);
 }
 
 #item-2:checked ~ .player #test  {
-  transform: translateY(-100px);
+  transform: translateY(0px);
 }
 
 #item-3:checked ~ .player #test  {
-  transform: translateY(-225px);
+  transform: translateY(-185px);
 }
 
 #item-4:checked ~ .player #test  {
-  transform: translateY(-295px);
+  transform: translateY(-185px);
 }
 
 #item-5:checked ~ .player #test  {
-  transform: translateY(-430px);
+  transform: translateY(-420px);
 }
 
 #item-6:checked ~ .player #test  {
-  transform: translateY(-475px);
+  transform: translateY(-625px);
 }
 
 #item-7:checked ~ .player #test  {
-  transform: translateY(-475px);
+  transform: translateY(-625px);
 }
 
+.the-youth-section{
+  height: 320vh;
+}
 
       }
 
@@ -304,32 +296,32 @@ h2{
 p{
     font-size: 16px;
 }
-#item-2:checked ~ .player #test {
-  transform: translateY(0);
+#item-1:checked ~ .player #test {
+  transform: translateY(10px);
 }
 
 #item-2:checked ~ .player #test  {
-  transform: translateY(-65px);
+  transform: translateY(10px);
 }
 
 #item-3:checked ~ .player #test  {
-  transform: translateY(-286px);
+  transform: translateY(-213px);
 }
 
 #item-4:checked ~ .player #test  {
-  transform: translateY(-286px);
+  transform: translateY(-213px);
 }
 
 #item-5:checked ~ .player #test  {
-  transform: translateY(-538px);
+  transform: translateY(-452px);
 }
 
 #item-6:checked ~ .player #test  {
-  transform: translateY(-635px);
+  transform: translateY(-685px);
 }
 
 #item-7:checked ~ .player #test  {
-  transform: translateY(-710px);
+  transform: translateY(-780px);
 }
 .the-youth-section{
   height: 240vh;
@@ -478,7 +470,7 @@ p{
     transform: translateY(-710px);
   }
   .the-youth-section{
-    height: 240vh;
+    height: 220vh;
     height: 430%;
     margin-top: 120px;
     background-image: linear-gradient(to left bottom,rgba(255,255,255,0.5),rgba(255,255,255,0.55)), url(http://drive.google.com/uc?export=view&id=1emxfat9Z0Tx_2tL5TBQ3hku1jtRrVeeA);

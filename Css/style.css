@@ -324,6 +324,11 @@ img {
   padding-top: 150px;
 }
 
+#song-info-4{
+  padding-top: 150px;
+}
+
+
 .sub-line {
   display: flex;
   justify-content: space-between;
@@ -356,27 +361,27 @@ img {
 }
 
 #item-2:checked ~ .player #test  {
-  transform: translateY(-100px);
+  transform: translateY(0px);
 }
 
 #item-3:checked ~ .player #test  {
-  transform: translateY(-245px);
+  transform: translateY(-185px);
 }
 
 #item-4:checked ~ .player #test  {
-  transform: translateY(-295px);
+  transform: translateY(-185px);
 }
 
 #item-5:checked ~ .player #test  {
-  transform: translateY(-470px);
+  transform: translateY(-420px);
 }
 
 #item-6:checked ~ .player #test  {
-  transform: translateY(-515px);
+  transform: translateY(-625px);
 }
 
 #item-7:checked ~ .player #test  {
-  transform: translateY(-590px);
+  transform: translateY(-625px);
 }
 
 
